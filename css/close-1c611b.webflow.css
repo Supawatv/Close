@@ -497,6 +497,38 @@ p {
   color: #fff;
 }
 
+.app {
+  display: none;
+}
+
+.hero-image-mask-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 100%;
+  margin-left: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  text-align: center;
+}
+
 @media screen and (max-width: 991px) {
   .flex-container {
     -webkit-box-orient: horizontal;
@@ -554,7 +586,10 @@ p {
     text-align: left;
   }
   .hero-image-mask {
-    display: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     overflow: visible;
     margin-right: 0px;
     margin-left: 0px;
@@ -587,6 +622,15 @@ p {
   .feature-image {
     margin-right: auto;
     margin-left: auto;
+  }
+  .profile {
+    height: 75vh;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .profile:hover {
+    -webkit-transform: translate3d(0px, -5px, 5px);
+    transform: translate3d(0px, -5px, 5px);
   }
   .button {
     width: 100%;
@@ -622,6 +666,42 @@ p {
   .section-2 {
     padding-right: 5%;
     padding-left: 5%;
+  }
+  .app {
+    display: block;
+    padding-top: 5%;
+    background-color: #bc67dc;
+    color: #fff;
+  }
+  .hero-image-mask-2 {
+    display: none;
+    overflow: visible;
+    margin-right: 0px;
+    margin-left: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+  .container-4 {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .profile {
+    height: 66vh;
   }
 }
 
